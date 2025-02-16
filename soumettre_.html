@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumettre une création</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soumettre une création</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Catégories</a>
+        <a href="soumettre.html">Soumettre une création</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Formulaire de soumission</h2>
+        <form>
+            <label for="name">Nom ou Pseudo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="category">Catégorie</label>
+            <select id="category" name="category" required>
+                <option value="">--Choisir une catégorie--</option>
+                <option value="poeme">Poème</option>
+                <option value="dessin">Dessin</option>
+                <option value="chanson">Chanson</option>
+                <option value="photo">Photographie</option>
+            </select>
+
+            <label for="description">Description de votre création</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <label for="file">Fichier</label>
+            <input type="file" id="file" name="file" required>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Créations d'Élèves. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

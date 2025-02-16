@@ -1,0 +1,125 @@
+﻿/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(to right, #6C63FF, #5848C2);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #6C63FF;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Catégories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.category {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+input, textarea, select, button {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #6C63FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5848C2;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .category {
+        flex: 1 1 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
